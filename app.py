@@ -7,7 +7,7 @@ import os
 
 # ---------- Load Model ----------
 #model_path = os.path.join(os.path.dirname(__file__), "mnist_cnn.keras")
-model = load_model("mnist_cnn.keras")
+model = load_model("mnist_cnn.h5")
 
 st.set_page_config(page_title="Digit Recognizer", layout="centered")
 
