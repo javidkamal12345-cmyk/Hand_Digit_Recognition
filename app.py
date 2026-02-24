@@ -1,4 +1,6 @@
 import streamlit as st
+st.set_page_config(page_title="Digit Recognizer", layout="centered")
+
 import numpy as np
 from tensorflow.keras.models import load_model
 from PIL import Image
@@ -9,7 +11,6 @@ import os
 #model_path = os.path.join(os.path.dirname(__file__), "mnist_cnn.keras")
 model = load_model("mnist_cnn.h5")
 
-st.set_page_config(page_title="Digit Recognizer", layout="centered")
 
 st.title("🖊️ Handwritten Digit Recognizer (CNN)")
 st.write("Draw a digit from 0 to 9 and click Predict")
